@@ -19,6 +19,9 @@ public class MyApplication extends Application {
         initDB();
     }
 
+    /**
+     * initialising the database
+     */
     private void initDB() {
         db = Room.databaseBuilder(getApplicationContext(),
                 MyDatabase.class, "my_database")

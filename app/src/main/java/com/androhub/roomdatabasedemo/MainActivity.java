@@ -34,7 +34,9 @@ public class MainActivity extends AppCompatActivity {
 
     private MyDatabase db;
 
+    //executorService to run the task in background thread
     private ExecutorService executorService = Executors.newSingleThreadExecutor();
+    //handler to touch UI from background thread
     private Handler handler = HandlerCompat.createAsync(Looper.getMainLooper());
 
     @Override

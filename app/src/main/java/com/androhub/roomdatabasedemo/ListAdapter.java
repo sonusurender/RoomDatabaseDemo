@@ -43,6 +43,10 @@ public class ListAdapter extends BaseAdapter {
         return i;
     }
 
+    /**
+     * remove the deleted user
+     * @param index
+     */
     public void removeData(int index){
         userList.remove(index);
         notifyDataSetChanged();
@@ -74,6 +78,10 @@ public class ListAdapter extends BaseAdapter {
         return view;
     }
 
+    /**
+     * return the list of checked users
+     * @return
+     */
     public List<User> getSelectedUsers() {
         List<User> userList = new ArrayList<>();
         for (User user  :this.userList){
